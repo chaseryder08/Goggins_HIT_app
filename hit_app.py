@@ -4,8 +4,8 @@ from pathlib import Path
 
 
 SKILL_LEVEL = ['1', '2', '3']
-TRACK_PATH = Path(r"C:\Users\User\Desktop\workspaces\local\python_projects\HIT_time_app\inspirational_shit.wav")
-GOGGINS_PATH = Path(r"C:\Users\User\Desktop\workspaces\local\python_projects\HIT_time_app\goggins.wav")
+TRACK_PATH = Path(r"C:\Users\User\Desktop\workspaces\local\python_projects\HIT_time_app\sound_files\inspirational_music.wav")
+GOGGINS_PATH = Path(r"C:\Users\User\Desktop\workspaces\local\python_projects\HIT_time_app\sound_files\goggins.wav")
 EXERCISES = ["Jumping Jacks", "Burpees", "Mountain Climbers", "Push ups", "Lunges", "Squats", "Plank", "Bicycle kicks", "Leg Thrusts", "High knees"]
 music_track = ""
 goggins_track = ""
