@@ -65,7 +65,7 @@ def check_goggins_resp(msg: str) -> str:
             return user_goggins_resp
         elif user_goggins_resp == "no":
             break
-        print("Please enter yes/y or no/n")  
+        print("Please enter yes or no")  
       
 def check_music_resp(msg: str) -> str:
     
@@ -75,7 +75,7 @@ def check_music_resp(msg: str) -> str:
             return user_music_resp
         elif user_music_resp == "no":
             break
-        print("Please enter yes/y or no/n")
+        print("Please enter yes or no")
         
         
             
