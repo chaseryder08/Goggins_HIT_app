@@ -62,21 +62,15 @@ def check_goggins_resp(msg: str) -> str:
             break
         print("Please enter yes or no")
 
-def check_music_resp(msg: str) -> str:
-    # TODO add docstring
-
-    while True:
-        user_music_resp = input(f"{msg}: ").lower()
-        if user_music_resp == "yes":
-            return user_music_resp
-        elif user_music_resp == "no":
-            break
-        print("Please enter yes or no")
-
 # Prompt user for skill level.
 user_input = None
 while user_input not in SKILL_LEVEL:
     user_input = input("Please enter your HIT skill level -- 1 = beginner | 2 = intermediate | 3 = Advanced: ")
+
+# Prompt user for music option.
+user_music_resp = None
+while user_music_resp not in ("yes", "no"):
+    user_music_resp = input("Would you like motivational music to pump you up? (yes or no)")
 
 if user_input == '1':
 
@@ -114,7 +108,6 @@ elif user_input == '3':
     print("Each set will last " + str(set_time) + " seconds")
     print("You will have " + str(rest_time) + " seconds of rest time in between sets")
 
-user_music_resp = check_music_resp("Would you like motivational music to pump you up?")
 goggins_user_resp = check_goggins_resp("Would you like David Goggins to provide you motivational support?")
 start = input("Hit enter when you are ready to start your workout : ")
 ready_go(start)
