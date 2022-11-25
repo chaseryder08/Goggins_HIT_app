@@ -65,7 +65,7 @@ def check_goggins_resp(msg: str) -> str:
 # Prompt user for skill level.
 user_input = None
 while user_input not in SKILL_LEVEL:
-    user_input = input("Please enter your HIT skill level -- 1 = beginner | 2 = intermediate | 3 = Advanced: ")
+    user_input = input("Please enter your HIT skill level. (1 = beginner | 2 = intermediate | 3 = advanced)")
 
 # Prompt user for music option.
 user_music_resp = None
