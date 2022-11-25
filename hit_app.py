@@ -1,3 +1,7 @@
+
+# TODO add docstring
+# https://realpython.com/documenting-python-code/
+
 import pygame as pg
 import time
 from pathlib import Path
@@ -16,6 +20,7 @@ pg.mixer.set_num_channels(50)
 
 # check user input
 def check_user_input(msg: str) -> str:
+    # TODO add docstring
     while True:
         resp = input(f"{msg}")
         if resp.isdigit():
@@ -25,6 +30,7 @@ def check_user_input(msg: str) -> str:
         print("You entered an invalid name")
 
 def ready_go(start):
+    # TODO add docstring, typing
     print("3")
     time.sleep(1)
     print("2")
@@ -33,6 +39,7 @@ def ready_go(start):
     time.sleep(1)
 
 def workout_timer(set_time):
+    # TODO add docstring, typing
 
     while set_time:
 
@@ -45,6 +52,7 @@ def workout_timer(set_time):
     print("REST! -- Time until next set: ")
 
 def rest_timer(rest_time):
+    # TODO add docstring, typing
 
     while rest_time:
 
@@ -55,6 +63,7 @@ def rest_timer(rest_time):
         rest_time -= 1
 
 def check_goggins_resp(msg: str) -> str:
+    # TODO add docstring
 
     while True:
         user_goggins_resp = input(f"{msg}: ").lower()
@@ -65,6 +74,7 @@ def check_goggins_resp(msg: str) -> str:
         print("Please enter yes or no")
 
 def check_music_resp(msg: str) -> str:
+    # TODO add docstring
 
     while True:
         user_music_resp = input(f"{msg}: ").lower()
