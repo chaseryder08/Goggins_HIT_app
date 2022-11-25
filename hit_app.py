@@ -147,4 +147,3 @@ for i in range(set_num):
 
 
 print("GREAT JOB!")
-exit()
