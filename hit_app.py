@@ -18,17 +18,6 @@ pg.mixer.init()
 pg.init()
 pg.mixer.set_num_channels(50)
 
-# check user input
-def check_user_input(msg: str) -> str:
-    # TODO add docstring
-    while True:
-        resp = input(f"{msg}")
-        if resp.isdigit():
-            if resp in SKILL_LEVEL:
-                print("You entered a valid number")
-                return resp
-        print("You entered an invalid name")
-
 def ready_go(start):
     # TODO add docstring, typing
     print("3")
@@ -84,7 +73,10 @@ def check_music_resp(msg: str) -> str:
             break
         print("Please enter yes or no")
 
-user_input = check_user_input("Please enter your HIT skill level -- 1 = beginner | 2 = intermediate | 3 = Advanced: ")
+# Prompt user for skill level.
+user_input = None
+while user_input not in SKILL_LEVEL:
+    user_input = input("Please enter your HIT skill level -- 1 = beginner | 2 = intermediate | 3 = Advanced: ")
 
 if user_input == '1':
 
