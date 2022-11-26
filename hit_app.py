@@ -78,23 +78,13 @@ if user_input == '1':
     set_time = 20
     rest_time = 10
     set_num = 8
-
-    print("You selected " + level + " : ")
-    print("Your workout will have " + str(set_num) + " sets total")
-    print("Each set will last " + str(set_time) + " seconds")
-    print("You will have " + str(rest_time) + " seconds of rest time in between sets")
-
+    
 elif user_input == '2':
 
     level = "Intermediate"
     set_time = 30
     rest_time = 10
     set_num = 10
-
-    print("You selected " + level + " : ")
-    print("Your workout will have " + str(set_num ) + " sets total")
-    print("Each set will last " + str(set_time) + " seconds")
-    print("You will have " + str(rest_time) + " seconds of rest time in between sets")
 
 elif user_input == '3':
 
@@ -103,10 +93,10 @@ elif user_input == '3':
     rest_time = 15
     set_num = 12
 
-    print("You selected " + level + " : ")
-    print("Your workout will have " + str(set_num ) + " sets total")
-    print("Each set will last " + str(set_time) + " seconds")
-    print("You will have " + str(rest_time) + " seconds of rest time in between sets")
+print("You selected " + level + " : ")
+print("Your workout will have " + str(set_num ) + " sets total")
+print("Each set will last " + str(set_time) + " seconds")
+print("You will have " + str(rest_time) + " seconds of rest time in between sets")
 
 goggins_user_resp = check_goggins_resp("Would you like David Goggins to provide you motivational support?")
 start = input("Hit enter when you are ready to start your workout : ")
